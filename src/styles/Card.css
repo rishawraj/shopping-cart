@@ -1,0 +1,11 @@
+.card {
+  border: 2px solid green;
+  padding: 10px;
+  text-align: center;
+}
+
+.red-rect {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}

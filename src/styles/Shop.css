@@ -1,0 +1,6 @@
+.product-grid {
+  background-color: lightblue;
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+}
