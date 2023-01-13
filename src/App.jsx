@@ -8,6 +8,7 @@ import { NotFound } from "./components/NotFound";
 import { Footer } from "./components/Footer";
 import { Cart } from "./components/Cart";
 import "./App.css";
+// import "./App2.css";
 import { createContext, useState } from "react";
 
 export const GlobalContext = createContext();

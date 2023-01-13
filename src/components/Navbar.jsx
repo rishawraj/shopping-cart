@@ -1,7 +1,11 @@
 import { NavLink } from "react-router-dom";
 import logo from "../styles/download.png";
+import { GlobalContext } from "../App";
+import { useContext } from "react";
+import cartIcon from "../styles/shopping-cart.png";
 
 export const Navbar = () => {
+  const { globalState } = useContext(GlobalContext);
   return (
     <nav>
       <div className="logo">
@@ -30,9 +34,16 @@ export const Navbar = () => {
         </NavLink>
         <NavLink
           to="/cart"
-          className={(navData) => (navData.isActive ? "active" : "none")}
+          className={(navData) =>
+            navData.isActive ? "cart-nav active" : "cart-nav"
+          }
         >
-          Cart
+          <img className="cart-icon" src={cartIcon} alt="cart-icon" />
+          {globalState.length >= 1 ? (
+            <span className="red-circle">{globalState.length}</span>
+          ) : (
+            ""
+          )}
         </NavLink>
       </div>
     </nav>
