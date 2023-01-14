@@ -1,9 +1,6 @@
-// import "../styles/Shop.css";
 import { Card } from "./Card";
 import birdNestFernPic from "../styles/plants/birds-nest-fern-plant.jpg";
 import bromeliadAechmeaPic from "../styles/plants/bromeliad-aechmea-fasciata300x250.jpg";
-import dracaenaPic from "../styles/plants/dracaena-janet-craig-compacta300x250.jpg";
-import luckyBambooPic from "../styles/plants/lucky-bamboo-indoor-house-plant300250.jpg";
 import nephthytisPic from "../styles/plants/nephthytis-houseplant.jpg";
 import peaceLilyPic from "../styles/plants/peace-lily-houseplant.jpg";
 import pothosPic from "../styles/plants/pothos-houseplant.jpg";
@@ -15,8 +12,7 @@ import zzPlantPic from "../styles/plants/zz-plant-indoor-house-plant300250.jpg";
 
 const Shop = () => {
   return (
-    // <div className="shop-container">
-    <div className="product-grid">
+    <div data-testid="shop" className="product-grid">
       <Card
         title={"birds-nest-fern-plant"}
         src={birdNestFernPic}
@@ -28,18 +24,6 @@ const Shop = () => {
         src={bromeliadAechmeaPic}
         price="50.32"
       />
-
-      {/* <Card
-        title={"dracaena-janet-craig-compacta"}
-        src={dracaenaPic}
-        price="50.32"
-      /> */}
-
-      {/* <Card
-        title={"lucky-bamboo-indoor-house-plant"}
-        src={luckyBambooPic}
-        price="50.32"
-      /> */}
 
       <Card title={"nephthytis-houseplant"} src={nephthytisPic} price="50.32" />
 
@@ -73,7 +57,6 @@ const Shop = () => {
         price="50.32"
       />
     </div>
-    // </div>
   );
 };
 

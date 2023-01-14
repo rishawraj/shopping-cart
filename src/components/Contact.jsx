@@ -1,9 +1,8 @@
 import plant_img from "../styles/plant2.jpg";
-// import "../styles/Contact.css";
 
 const Contact = () => {
   return (
-    <div className="contact-container">
+    <div data-testid="contact" className="contact-container">
       <div className="text-contact">
         <div>Phone: 555-555-5555</div>
         <div>

@@ -22,7 +22,7 @@ const Card = ({ title, price, src }) => {
 
   return (
     <>
-      <div className="card">
+      <div className="card" data-testid="product">
         <div className="card-image">
           <img className="plant-img" src={src} alt="plants" />
         </div>

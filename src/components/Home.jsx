@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="home-container">
+    <div data-testid="home" className="home-container">
       <div className="text">
         <div>
           Bring the beauty of nature into your home, without the upkeep.

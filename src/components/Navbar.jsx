@@ -7,7 +7,7 @@ import cartIcon from "../styles/shopping-cart.png";
 export const Navbar = () => {
   const { globalState } = useContext(GlobalContext);
   return (
-    <nav>
+    <nav data-testid="navbar">
       <div className="logo">
         <NavLink to="/">
           <img src={logo} alt="logo" />
@@ -33,6 +33,7 @@ export const Navbar = () => {
           contact
         </NavLink>
         <NavLink
+          data-testid="cart-link"
           to="/cart"
           className={(navData) =>
             navData.isActive ? "cart-nav active" : "cart-nav"
