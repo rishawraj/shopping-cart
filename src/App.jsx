@@ -16,7 +16,7 @@ const App = () => {
   const [globalState, setGlobalState] = useState([]);
   return (
     <GlobalContext.Provider value={{ globalState, setGlobalState }}>
-      <BrowserRouter basename="/">
+      <BrowserRouter basename="/shopping-cart">
         <Navbar />
         <div className="container">
           <Routes>
